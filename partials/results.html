@@ -1,0 +1,21 @@
+
+
+<div class="row">
+
+
+<div class="col-md-4" ng-click="view.goDetails(movie.imdbID)" ng-repeat="movie in view.movies" ng-class="{'col-md-4' : !isActive, 'col-md-4 hover': isActive}" ng-init"isActive = false"  ng-mouseenter="isActive = true" ng-mouseleave="isActive = false">
+<div class="col-md-12 well" >
+
+
+
+    <p>
+      {{movie.Title}}
+    </p>
+    <p>
+      {{movie.Year}}
+    </p>
+
+  </div>
+</div>
+
+</div>
